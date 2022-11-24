@@ -1,7 +1,6 @@
 class StudentsController < ApplicationController
 
   def index
-    byebug
     if params["name"].nil?
       students = Student.all
       render json: students
